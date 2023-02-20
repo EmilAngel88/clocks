@@ -31,21 +31,13 @@
     <div id="root"></div>
 
     <div id="clocks">
-        <div class="arrows" id="hours" style="width: 40px; height: 2px; background-color: red;" ></div>
-        <div class="arrows" id="minutes" style="width: 50px; height: 2px; background-color: green;" ></div>
-        <div class="arrows" id="seconds" style="width: 50px; height: 1px; background-color: blue;" ></div>
+        <div class="arrows" id="hours"></div>
+        <div class="arrows" id="minutes"></div>
+        <div class="arrows" id="seconds"></div>
     </div>
   </body>
 </html>
   <style>
-      .arrows {
-          position: absolute;
-          transform-origin: left;
-          top: 50%;
-          left: 50%;
-          transform: translateX(-50%);
-      }
-
       #clocks {
           position: relative;
           width: 110px;
@@ -53,5 +45,32 @@
           margin: 20px;
           border: 1px solid black;
           border-radius: 100%;
+          transform: rotate(-90deg);
+      }
+
+      #hours {
+          width: 40px;
+          height: 2px;
+          background-color: red;
+      }
+
+      #minutes {
+          width: 50px;
+          height: 2px;
+          background-color: green;
+      }
+
+      #seconds {
+          width: 50px;
+          height: 1px;
+          background-color: blue;
+      }
+
+      .arrows {
+          position: absolute;
+          transform-origin: left;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%);
       }
   </style>
