@@ -5,6 +5,7 @@ const clock = {
 }
 
 function init(){
+    handleCurrentTime();
     setInterval(handleCurrentTime, 1000);
 }
 
