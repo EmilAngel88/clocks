@@ -29,15 +29,29 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <div id="clocks">
+        <div class="arrows" id="hours" style="width: 40px; height: 2px; background-color: red;" ></div>
+        <div class="arrows" id="minutes" style="width: 50px; height: 2px; background-color: green;" ></div>
+        <div class="arrows" id="seconds" style="width: 50px; height: 1px; background-color: blue;" ></div>
+    </div>
   </body>
 </html>
+  <style>
+      .arrows {
+          position: absolute;
+          transform-origin: left;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%);
+      }
+
+      #clocks {
+          position: relative;
+          width: 110px;
+          height: 110px;
+          margin: 20px;
+          border: 1px solid black;
+          border-radius: 100%;
+      }
+  </style>
